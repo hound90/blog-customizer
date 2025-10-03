@@ -1,11 +1,11 @@
-# \*\*\* В основном файле - App ----------------------------
+#### В основном файле - App
 
 `const [articleState, setArticleState] = useState<ArticleStateType>(defaultArticleState);`
 
 При загрузке приложения создается состояние `articleState` с начальными значениями из `defaultArticleState`
 Эти значения включают: шрифт, размер текста, цвета, ширину контента
 
-# \*\*\* Применение стилей через CSS-переменные
+#### Применение стилей через CSS-переменные
 
 `style={
 	{
@@ -22,11 +22,11 @@ CSS-переменные устанавливаются непосредстве
 Определяются две функции: `handleApply` для применения новых настроек и `handleReset`
 для сброса настроек к состоянию по умолчанию.
 
-# \*\*\* Сайдбар и его работа ----------------------------
+#### Сайдбар и его работа
 
-## Компонент `ArticleParamsForm`
+Компонент `ArticleParamsForm`
 
-## `ArticleParamsForm` принимает пропсы: `currentState`, `onApply`, `onReset`.
+`ArticleParamsForm` принимает пропсы: `currentState`, `onApply`, `onReset`.
 
 `const [isOpen, setIsOpen] = useState(false);
 const [inputArticleStyleState, setInputArticleStyleState] = useState<ArticleStateType>(currentState);`
@@ -128,7 +128,7 @@ const [inputArticleStyleState, setInputArticleStyleState] = useState<ArticleStat
 
 ---
 
-# \*\*\* Структура возвращаемого ----------------------------
+#### Структура возвращаемого
 
 `return (
 	<>
@@ -177,7 +177,7 @@ ARIA-атрибуты
 
 ---
 
-# \*\*\* Компоненты выбора настроек
+#### Компоненты выбора настроек
 
 В качестве примера:
 `<Select
